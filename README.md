@@ -9,9 +9,11 @@
 ##### Cline -> Server 메시지 보내는 방식은 크게 3가지
   1. GET 방식으로 URL에 Query 파라미터를 보내는 방식
 - ex) /url?username=kim&age=20
+
   2. POST 방식으로 "HTMForm" 데이터 전송
 - Content Type 선언 필요
 - GET 방식의 쿼리 파라미터와 폼 데이터는 같은 형식을 사용한다.
+
   3. HTTP message body에 원하는 데이터를 "직접" 담아서 요청
     - HTTP API에서 주로 사용됨.
     - 대부분 데이터를 주고받는 방식은 JSON을 사용
