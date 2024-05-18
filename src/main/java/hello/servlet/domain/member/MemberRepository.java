@@ -17,7 +17,7 @@ public class MemberRepository {
     private static final MemberRepository instance = new MemberRepository();
 
     // 객체 생성 시 무조건 해당 메서드를 거쳐가게끔 설정
-    public static MemberRepository instance() {
+    public static MemberRepository getInstance() {
         return instance;
     }
 
@@ -37,5 +37,9 @@ public class MemberRepository {
     public List<Member> findAll() {
         //store의 모든 값들을 꺼내 새로운 ArrayList에 넣어줌
         return new ArrayList<>(store.values());
+    }
+
+    public void clearStore() {
+
     }
 }
